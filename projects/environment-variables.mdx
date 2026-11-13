@@ -30,7 +30,7 @@ Revealed values are visible until you navigate away or click the eye icon again.
 
 ## Add or edit a variable
 
-1. Click **Add variable**, or open the row menu (⋯) and choose **Edit**.
+1. Click **New variable**, or open the row menu (⋯) and choose **Edit**.
 2. Enter a key. Keys must match `[A-Z_][A-Z0-9_]*`; the field uppercases as you type and shows an inline error for invalid characters.
 3. Paste the value. Multi-line values (certificates, JSON) are supported.
 4. Choose the environments and whether the value is sensitive.
@@ -38,7 +38,9 @@ Revealed values are visible until you navigate away or click the eye icon again.
 
 Changes apply to the **next deployment** in each selected environment. Running deployments keep the values they were built with. Click **Deploy** on the project header to roll the new values out immediately.
 
-## Export
+## Import and export
+
+**Import .env** adds variables from a dotenv file.
 
 **Export .env** downloads a dotenv file for the currently filtered environment, with sensitive values redacted. Use the CLI (`orbit env pull --env development`) when you need real values locally.
 

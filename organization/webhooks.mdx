@@ -57,6 +57,10 @@ Expand an endpoint to see recent deliveries with event type, response status, du
 
 After **3 consecutive failures** the endpoint is disabled automatically and a `webhook.disable` entry is written to the [audit log](/organization/audit-log). Fix the receiver, then re-enable with the switch on the endpoint row.
 
+<Frame caption="A disabled endpoint shows the Disabled and 3 failed badges. Expand it to see each delivery and Redeliver it.">
+  <img src="/images/screenshots/webhooks-deliveries.png" alt="Webhooks page with a disabled endpoint expanded to show three failed deliveries, each with a Redeliver button" />
+</Frame>
+
 ## Tips
 
 - Respond with `2xx` quickly and do the work asynchronously; the 30-second timeout counts against you.

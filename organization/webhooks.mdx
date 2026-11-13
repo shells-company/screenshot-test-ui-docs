@@ -55,6 +55,10 @@ The secret's prefix is shown under the endpoint's **Settings** tab; the full val
 
 Expand an endpoint to see recent deliveries with event type, response status, duration, and time. Failed deliveries (any non-2xx, or no response within 30 seconds) are retried with exponential backoff up to 5 times over 6 hours. Click **Redeliver** to retry any delivery manually.
 
+<Frame caption="An endpoint that was disabled after repeated failures. Each failed delivery shows its status code and a Redeliver button.">
+  <img src="/images/screenshots/webhook-deliveries.png" alt="An expanded webhook endpoint marked Disabled with a 3 failed badge, showing the Recent deliveries table with event type, status, duration, time, and Redeliver buttons" />
+</Frame>
+
 After **3 consecutive failures** the endpoint is disabled automatically and a `webhook.disable` entry is written to the [audit log](/organization/audit-log). Fix the receiver, then re-enable with the switch on the endpoint row.
 
 ## Tips

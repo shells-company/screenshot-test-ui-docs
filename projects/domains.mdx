@@ -16,6 +16,10 @@ Every project is reachable at `<slug>.orbit.app` from its first deployment. The 
 
 While a domain is unverified the table shows **Pending DNS** in amber. Hover it to see the exact record Orbit is looking for.
 
+<Frame caption="An unverified domain shows Pending DNS in amber, and its SSL state stays Pending until DNS verifies.">
+  <img src="/images/screenshots/project-domains.png" alt="The Domains tab of a project, listing three domains with verification and SSL status, one marked Primary and one showing Pending DNS" />
+</Frame>
+
 ## How traffic reaches a deployment
 
 Custom domains resolve to Orbit's anycast edge. Each edge location terminates TLS and load-balances requests across the healthy instances of your production deployment in the project's region, the same way a conventional NAT-based load-balancing cluster does.

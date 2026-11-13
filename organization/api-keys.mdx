@@ -14,6 +14,10 @@ API keys authenticate the Orbit CLI, the Terraform provider, and direct calls to
 4. Tick the scopes it needs. Prefer read scopes; a deploy key needs only `deployments:write` and `projects:read`.
 5. Click **Create key**.
 
+<Frame caption="A deploy key for CI with a 90-day expiration and only the projects:read and deployments:write scopes selected.">
+  <img src="/images/screenshots/create-api-key-dialog.png" alt="The Create API key dialog with a name field, an expiration selector, and scope checkboxes grouped by Projects, Deployments, Environment, Observability, and Organization" />
+</Frame>
+
 Orbit then shows the full key once. Copy it into your secret manager before closing the dialog; after that only the prefix (`orb_live_4kQ2`) is visible anywhere.
 
 <Warning>

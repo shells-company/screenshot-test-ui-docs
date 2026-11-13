@@ -10,6 +10,10 @@ A feature flag is a named boolean (or string, number, or JSON value) that your c
 
 Each row shows the flag's name, key, tags, a master **Enabled** switch, one switch per environment, the rollout percentage, owner, and last update. Environment switches are disabled while the master switch is off.
 
+<Frame caption="The flags table. When a flag's Enabled switch is off, its environment switches are grayed out.">
+  <img src="/images/screenshots/feature-flags-table.png" alt="The Feature flags table with Enabled, Production, Staging, and Development switches, rollout bars, owners, and update times" />
+</Frame>
+
 | Column | Meaning |
 | --- | --- |
 | **Enabled** | Master switch. Off means the flag serves its default (`false`) everywhere |

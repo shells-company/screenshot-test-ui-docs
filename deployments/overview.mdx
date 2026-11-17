@@ -43,6 +43,10 @@ Click any deployment to open its detail page:
 - **Details** — project, region, timing, and the deployment URL with a copy button.
 - **Build logs**, **Runtime logs**, **Outputs**, and **Checks** tabs.
 
+<Frame caption="A ready production deployment. The pipeline shows all six stages complete, and Rollback appears because this is a production build.">
+  <img src="/images/screenshots/deployment-detail.png" alt="A ready production deployment detail page with the six-stage pipeline, the Details card, and the Build logs tab" />
+</Frame>
+
 **Outputs** lists every route the build produced with its type (static, edge function, Node function) and size. **Checks** shows the results of Lighthouse, bundle-size budget, type checking, and unit tests.
 
 Header actions depend on state: **Visit**, **Redeploy**, **Promote to production** (previews only), **Rollback** (production only), and **Cancel build** while queued or building.

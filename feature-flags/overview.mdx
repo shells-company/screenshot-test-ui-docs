@@ -8,23 +8,25 @@ A feature flag is a named boolean (or string, number, or JSON value) that your c
 
 ## The flags table
 
-Each row shows the flag's name, key, tags, a master **Enabled** switch, one switch per environment, the rollout percentage, owner, and last update. Environment switches are disabled while the master switch is off.
+Open **Flags** in the sidebar to reach the **Release switches** page. Each row shows the flag's name, key, tags, a master **Live** switch, one pill per environment, the audience percentage, owner, and last update.
 
-<Frame caption="The flags table. When a flag's Enabled switch is off, its environment switches are grayed out.">
-  <img src="/images/screenshots/feature-flags-table.png" alt="The Feature flags table with Enabled, Production, Staging, and Development switches, rollout bars, owners, and update times" />
+Click an environment pill (**PROD**, **STAG**, or **DEVE**) to turn the flag on or off in that environment. A green pill means the flag is on there, and a struck-through gray pill means it's off. Environment pills are disabled while the **Live** switch is off.
+
+<Frame caption="The Release switches table. When a flag's Live switch is off, its environment pills are grayed out.">
+  <img src="/images/screenshots/feature-flags-table.png" alt="The Release switches table with Live toggles, PROD, STAG, and DEVE environment pills, audience percentages, owners, and update times" />
 </Frame>
 
 | Column | Meaning |
 | --- | --- |
-| **Enabled** | Master switch. Off means the flag serves its default (`false`) everywhere |
-| **Production / Staging / Development** | Whether the flag is active in that environment |
-| **Rollout** | Percentage of users who receive `true` after targeting rules have been evaluated |
+| **Live** | Master switch. Off means the flag serves its default (`false`) everywhere |
+| **Environments** | Whether the flag is active in production, staging, and development |
+| **Audience** | Percentage of users who receive `true` after targeting rules have been evaluated |
 
 Search matches names, keys, and tags. Click a flag's name to open its detail sheet with the environment switches, targeting rules, and an SDK snippet.
 
 ## Creating a flag
 
-Click **Create flag**. The dialog has three tabs:
+Click **Add switch**. The **Create feature flag** dialog has three tabs:
 
 1. **Basics** — name, key (auto-generated from the name as kebab-case), description, and type.
 2. **Targeting** — ordered rules that serve a value to users matching an attribute. See [Targeting](/feature-flags/targeting).

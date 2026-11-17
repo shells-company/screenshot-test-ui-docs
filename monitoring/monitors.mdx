@@ -8,10 +8,10 @@ A monitor requests a URL on a schedule from the regions you choose and alerts wh
 
 ## The Monitors page
 
-Summary cards show total monitors, how many are up or down, and average 30-day uptime. The table lists each monitor with status, uptime, average latency, interval, regions, and last check. Click a row for the detail page; the row menu offers **Pause**/**Resume**, **Run check now**, and **Delete**.
+Click **Monitors** in the sidebar to open the **Uptime checks** page. Summary cards show the total number of checks, how many are **Healthy** or **Failing**, and average 30-day uptime. Each monitor has its own card with its status, **Availability** (30-day uptime), **Response** (average latency), how often it runs (**Every**), its regions, and when it was last checked. Click a card for the detail page; the card menu offers **Pause**/**Resume**, **Run check now**, and **Delete**.
 
-<Frame caption="The Monitors page. The Down card flags monitors that need attention, and each row shows its status badge and regions.">
-  <img src="/images/screenshots/monitors-list.png" alt="The Monitors page with summary cards for total, up, down, and average uptime above a table of monitors with status, uptime, latency, interval, and regions" />
+<Frame caption="The Uptime checks page. The Failing card flags monitors that need attention, and each card shows its status badge, key metrics, and regions.">
+  <img src="/images/screenshots/monitors-list.png" alt="The Uptime checks page with summary cards for checks, healthy, failing, and average uptime above a grid of monitor cards showing availability, response time, interval, and regions" />
 </Frame>
 
 | Status | Meaning |
@@ -23,7 +23,7 @@ Summary cards show total monitors, how many are up or down, and average 30-day u
 
 ## Creating a monitor
 
-Click **Create monitor** to open the four-step wizard. **Continue** stays disabled until the current step is valid.
+Click **New check** to open the four-step wizard. **Continue** stays disabled until the current step is valid.
 
 <Steps>
   <Step title="Endpoint">

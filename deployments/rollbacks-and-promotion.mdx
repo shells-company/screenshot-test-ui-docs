@@ -10,7 +10,7 @@ Because every deployment is immutable, rolling back means pointing production at
 
 1. Open the project's **Overview** tab or the deployment you want to restore.
 2. Click **Rollback**. From the Overview tab this restores the previous production deployment; from a deployment page it restores that specific build.
-3. Traffic switches within a few seconds. The rollback is recorded in the [audit log](/organization/audit-log) as `deployment.rollback`.
+3. Traffic switches within a few seconds. The rollback is recorded in the [activity history](/organization/audit-log) as `deployment.rollback`.
 
 <Note>
 Rolled-back deployments keep the environment variables they were originally built with. If you rolled back because of a bad variable, fix the variable and redeploy instead.

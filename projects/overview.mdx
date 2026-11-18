@@ -4,12 +4,12 @@ description: "A project is one Git repository plus everything needed to run it: 
 icon: "folder-kanban"
 ---
 
-## The Projects page
+## The Apps page
 
-The **Projects** page lists every project in the organization with its health, framework, region, 24-hour request volume, error rate, and time since the last deployment. Switch between the table and a card grid with the toggle on the right, search by name, or filter by status.
+The **Apps** page lists every project in the organization. It opens in the **Cards** view, where each card shows the project's health, repository, 24-hour requests, error rate, and p95 latency. Switch to **List** with the toggle on the right for the full table, which adds framework, region, and time since the last deployment. Search by name or filter by status in either view.
 
-<Frame caption="The Projects table. Use the search box and status filter on the left, and the Table and Grid toggle on the right.">
-  <img src="/images/screenshots/projects-list.png" alt="The Projects page table listing each project with its status, framework, region, 24-hour requests, error rate, and last deploy" />
+<Frame caption="The Apps page in the Cards view. Use the search box and status filter on the left, and the List and Cards toggle on the right.">
+  <img src="/images/screenshots/projects-list.png" alt="The Apps page showing a card for each project with its status, repository, requests, error rate, and p95 latency" />
 </Frame>
 
 Project status is derived from monitors and error rates:
@@ -21,7 +21,7 @@ Project status is derived from monitors and error rates:
 | **Down** | One or more production monitors failing in every region |
 | **Paused** | Deployments and monitors are suspended; the project serves nothing |
 
-Click any row to open the project. The row menu (⋯) offers **Visit site**, **Redeploy**, and **Pause**/**Resume** without leaving the list.
+Click any card or row to open the project. In the **List** view, the row menu (⋯) offers **Visit site**, **Redeploy**, and **Pause**/**Resume** without leaving the list.
 
 ## Inside a project
 
